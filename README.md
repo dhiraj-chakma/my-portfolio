@@ -11,42 +11,35 @@ The portfolio provides an online presence for Dhiraj, acting as a digital resume
 ## Clone the Repository:
 
 bash
-Copy code
-git clone https://github.com/your_username/your_repository_name.git
-Replace your_username and your_repository_name with the actual username and repository name.
+**git clone https://github.com/your_username/your_repository_name.git**
 
 ## Navigate to the Project Directory:
 
 bash
-Copy code
-cd path_to_project
+**cd path_to_project**
 Install Dependencies:
 If you're using npm:
 
 bash
-Copy code
-npm install
+**npm install**
 Or, if you're using yarn:
 
 bash
-Copy code
-yarn install
+**yarn install**
 
 ## Start the Development Server:
 If you're using npm:
 
 bash
-Copy code
-npm start
+**npm start**
 Or, if you're using yarn:
 
 bash
-Copy code
-yarn start
+**yarn start**
 The project should now be running on **http://localhost:3000/.**
 
 # Where Users Can Get Help with the Project:
-For any issues or inquiries related to the portfolio, you can open an issue in the GitHub repository. Additionally, you can reach out to Dhiraj directly via the contact form on the portfolio website or by dropping an email at chakmadhiraj@gmail.com.
+For any issues or inquiries related to the portfolio, you can open an issue in the GitHub repository. Additionally, you can reach out to Dhiraj directly via the contact form on the portfolio website or by dropping an email at **chakmadhiraj@gmail.com.**
 
 # Who Maintains and Contributes to the Project:
 Currently, the project is maintained by Dhiraj Chakma. He's the sole contributor as of now, but contributions or suggestions for improvements are always welcome.
