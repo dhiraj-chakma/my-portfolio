@@ -1,0 +1,32 @@
+// Importing the main App styles
+@import "../../App.scss";
+
+// The class for the initial animation of the text
+.text-animate{
+  display: inline-block;          // Ensures the text elements are inline but can have block properties
+  opacity: 0;                     // Initially hidden
+  animation: bounceIn 1s 1s;     // Applies a bounce in animation over 1 second with 1 second delay
+  animation-fill-mode: forwards; // Ensures the animation remains at its end state
+  min-width: 10px;                // Ensures the text has a minimum width of 10px
+}
+
+// Class for the hover animation of the text
+.text-animate-hover{
+  min-width: 10px;                // Ensures the text has a minimum width of 10px
+  display: inline-block;          // Ensures the text elements are inline but can have block properties
+  animation-fill-mode: both;     // Ensures the animation respects both its starting and ending states
+
+  // Hover effect
+  &:hover{
+    animation: rubberBand 1s;   // Applies a rubber band animation over 1 second on hover
+    color: $primary-color;      // Changes the color to the primary color on hover
+  }
+}
+
+// A loop to create animation delays for individual elements
+// It will generate classes like .text-animate._1, .text-animate._2,..., .text-animate._35
+@for $i from 1 through 35{
+  .text-animate._#{$i}{
+    animation-delay: #{$i / 10}s; // Incrementally increasing the animation delay by 0.1s
+  }
+}

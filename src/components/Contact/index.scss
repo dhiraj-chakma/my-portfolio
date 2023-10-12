@@ -1,0 +1,166 @@
+// Import main App styles
+@import '../../App.scss';
+
+// Styling for contact form
+.contact-form {
+  width: 100%;
+  margin-top: 20px;
+
+  ul {
+    padding: 0;
+    margin: 0;
+
+    // Styling for each list item in the form
+    li {
+      padding: 0;
+      margin: 0;
+      list-style: none; // Removing default bullet points
+      margin-bottom: 10px;
+      overflow: hidden;
+      display: block;
+      position: relative;
+      opacity: 0;
+      animation: fadeInUp 2s 2s;
+      animation-fill-mode: forwards;
+      clear: both;
+    }
+
+    // For side-by-side elements like name and email
+    .side-by-side {
+      display: flex;
+    }
+
+    // Half-width elements
+    li.half {
+      margin-right: 10px;
+    }
+  }
+
+  // Styling text and email input fields
+  input[type='text'],
+  input[type='email'] {
+    width: 100%;
+    border: 0;
+    background: #115173;
+    height: 50px;
+    font-size: 16px;
+    color: #fff;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  // Styling the textarea for messages
+  textarea {
+    width: 100%;
+    border: 0;
+    background: #115173;
+    height: 50px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px;
+    min-height: 150px;
+    box-sizing: border-box;
+  }
+}
+
+// Styling for the flat button in the form
+.flat-button2 {
+  color: $primary-color;
+  background: 0 0;
+  font: 11px;
+  letter-spacing: 3px;
+  text-decoration: none;
+  padding: 8px 10px;
+  border: 1px solid $primary-color;
+  float: right;
+  border-radius: 4px;
+}
+
+// Styling for contact information shown on the map
+.info-map {
+  position: absolute;
+  background-color: #000;
+  top: 80px;
+  right: 30%;
+  z-index: 9999;
+  width: 267px;
+  padding: 20px;
+  color: #fff;
+  font-family: 'Helvetica';
+  font-size: 17px;
+  font-weight: 300;
+  opacity: 0;
+  animation: fadeIn 1s 1.5s;
+  animation-fill-mode: forwards;
+
+  // Highlighting email in the info
+  span {
+    font-size: 16px;
+    display: block;
+    padding-top: 20px;
+    color: $primary-color;
+  }
+}
+
+// Styling for the map wrapper
+.map-wrap {
+  background: rgba(8, 253, 216, 0.1);
+  float: right;
+  width: 53%;
+  height: 100%;
+}
+
+// Styling for the leaflet map container
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  opacity: 0;
+  animation: backInRight 1s 1.2s;
+  animation-fill-mode: forwards;
+}
+
+// Mobile responsive styling
+@media (max-width: 767px) {
+  .map-wrap{
+    position: absolute;
+    width: 100%;
+    height: 35%;
+    bottom: 0;
+  }
+  .info-map {
+    top: 0;
+    right: 0;
+    width: 120px;
+    height: 80px;
+    font-size: 8px;
+    span{
+      font-size: 10px;
+    }
+  }
+  .about-page .text-zone, .contact-page .text-zone{
+    width: 70%;
+    top: 30%;
+  }
+  .top-tags{
+    top: 5px;
+  }
+  h1::before{
+    top: 5%;
+  }
+}
+
+// Tablet responsive styling
+@media (min-width: 768px) and (max-width: 887px) {
+  .info-map {
+    right: 20%;
+    width: 180px;
+  }
+}
+
+@media (min-width: 888px) and (max-width: 1540px) {
+  .info-map {
+    right: 25%;
+    width: 180px;
+  }
+}

@@ -1,0 +1,156 @@
+@import "../../App.scss";
+
+// Main Sidebar Styles
+.nav-bar {
+  background: #181818;
+  width: 80px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  min-height: 500px; // Minimum height to support shorter viewports
+
+  // Logo styles
+  .logo {
+    display: block;
+    padding: 8px 0;
+  }
+
+  // General image styles
+  img {
+    display: block;
+    margin: 8px auto;
+    width: 24px;
+    height: auto;
+
+    // Sub-logo styles
+    &.sub-logo {
+      width: 60px;
+    }
+  }
+}
+
+// Navigation Bar Styles
+nav {
+  display: block;
+  text-align: center;
+  position: absolute;
+  height: 210px;
+  top: 50%;
+  margin-top: -120px; // Centering the element
+  width: 100%;
+
+  // Individual link styles
+  a {
+    font-size: 22px;
+    color: #4d4d4e;
+    display: block;
+    line-height: 51px;
+    height: 51px;
+    position: relative;
+
+    // Icon transition styles
+    i {
+      transition: all 0.3s ease-out;
+    }
+
+    // Hover effects
+    &:hover {
+      color: $primary-color;
+
+      // SVG opacity on hover
+      svg {
+        opacity: 0;
+      }
+
+      // Text appears on hover
+      &:after {
+        opacity: 1;
+      }
+    }
+
+    // Adding Text Below The Icons
+    &:after {
+      content: '';
+      font-size: 9px;
+      letter-spacing: 2px;
+      position: absolute;
+      bottom: 0;
+      display: block;
+      width: 100%;
+      text-align: center;
+      opacity: 0;
+      transition: all 0.3 ease-out;
+    }
+
+    // For the Home link
+    &:first-child {
+      &::after {
+        content: 'HOME';
+      }
+    }
+  }
+
+  // For the About link
+  a.about-link {
+    &:after {
+      content: 'ABOUT';
+    }
+  }
+
+  // For the Contact link
+  a.contact-link {
+    &:after {
+      content: 'CONTACT';
+    }
+  }
+
+  // Active state styles
+  a.active {
+    svg {
+      color: $primary-color;
+    }
+  }
+}
+.sidebar-ul{
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  display: block;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  margin: 0;
+
+  li {
+    a {
+      padding: 7px;
+      display: block;
+      font-size: 20px;
+      line-height: 15px;
+    }
+
+    &:hover svg {
+      color: $primary-color;
+    }
+  }
+}
+
+
+// Media Queries for Tablets
+@media only screen and (max-width: 768px) {
+  .nav-bar {
+    width: 60px;
+  }
+
+  nav a {
+    font-size: 18px;
+    line-height: 40px;
+    height: 40px;
+  }
+
+  .sidebar-ul li a {
+    font-size: 16px;
+  }
+}
+

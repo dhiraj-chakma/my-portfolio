@@ -1,0 +1,55 @@
+// Importing the main App styles
+@import "../../../App.scss";
+
+// Styles for the logo container
+.logo-container {
+  // Stacking order of the element
+  z-index: -1;
+  // Setting width and height to 100%
+  width: 100%;
+  height: 100%;
+  // Absolute positioning
+  position: absolute;
+  top: 0;
+  right: -25%;
+  bottom: -150PX;
+  left: auto;
+  // Centering element
+  margin: auto;
+  // Uncomment to set opacity to 0
+  // opacity: 0;
+
+  // Styles for the SVG within the logo container
+  svg {
+    width: 100%;
+    height: auto;
+    bottom: 0px;
+    position: relative;
+    // Rotating the SVG
+    transform: rotateZ(30deg) !important;
+  }
+
+  // Styles for the solid version of the logo
+  .solid-logo {
+    position: absolute;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    // Setting opacity to 0 for the solid logo
+    opacity: 0;
+    // Rotating the logo
+    transform: rotateZ(30deg);
+    // Ensuring the solid logo appears above the SVG
+    z-index: 1;
+  }
+}
+
+// Styling for the SVG container
+.svg-container {
+  // Setting the color and stroke width for the SVG
+  stroke: $primary-color;
+  stroke-width: .2px;
+}

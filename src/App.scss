@@ -1,0 +1,46 @@
+// Define primary color for easy reusability
+$primary-color: #e91e63;
+
+// Import external styles for animations and loaders
+@import "animate.css";
+@import "~loaders.css/src/animations/pacman.scss";
+
+// Import custom fonts
+
+// Helvetica Neue Font Import
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("./assets/fonts/helvetica-neu.ttf") format("truetype");
+}
+
+// La Belle Aurore Font Import
+@font-face {
+  font-family: "La Belle Aurore";
+  src: url("./assets/fonts/LaBelleAurore.woff2") format("woff2");
+}
+
+// Coolvetica Font Import
+@font-face {
+  font-family: "Coolvetica";
+  src: url("./assets/fonts/CoolveticaRg-Regular.woff2") format("woff2");
+}
+
+// Setting default font for input fields and textareas
+input, textarea {
+  font-family: "Helvetica Neue";
+}
+
+// Styling for the loader when active
+.loader-active {
+  display: block;
+  position: absolute; // Position it over other content
+  left: 0;
+  right: 0;
+  margin: auto;  // Centering the loader horizontally
+  top: 0;
+  bottom: 0;    // Centering the loader vertically
+  width: 50px;
+  height: 50px;
+  animation: fadeOut 1s 1s;  // Fade out animation after 1 second
+  animation-fill-mode: forwards;
+}
