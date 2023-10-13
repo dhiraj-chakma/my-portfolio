@@ -6,6 +6,10 @@ import About from './components/About';
 import Contact from './components/Contact';
 
 function App() {
+
+  console.log(process.env.REACT_APP_MY_ENV_VAR);
+
+
   return (
     // Using React Router's Routes component to handle routing
     <Routes>
