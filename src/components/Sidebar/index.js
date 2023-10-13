@@ -38,21 +38,21 @@ const Sidebar = ()=>(
     <ul className='sidebar-ul'>
       {/* LinkedIn link */}
       <li>
-        <a target='_blank' rel='norefferer' href='https://www.linkedin.com/in/dhiraj-chakma/'>
+        <a target='_blank' rel='noopener norefferer' href='https://www.linkedin.com/in/dhiraj-chakma/'>
           <FontAwesomeIcon icon={ faLinkedin}  color='#4d4d4e' />
         </a>
       </li>
 
        {/* GitHub link */}
       <li>
-        <a target='_blank' rel='norefferer' href='https://github.com/dhiraj-chakma'>
+        <a target='_blank' rel='noopener norefferer' href='https://github.com/dhiraj-chakma'>
           <FontAwesomeIcon icon={ faGithub } color='#4d4d4e' />
         </a>
       </li>
 
       {/* Skype link */}
       <li>
-        <a target='_blank' rel='norefferer' href='https://join.skype.com/invite/n6qMcDm1u05N'>
+        <a target='_blank' rel='noopener norefferer' href='https://join.skype.com/invite/n6qMcDm1u05N'>
           <FontAwesomeIcon icon={ faSkype } color='#4d4d4e' />
         </a>
       </li>

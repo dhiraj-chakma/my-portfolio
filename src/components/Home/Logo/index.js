@@ -1,7 +1,7 @@
 // Importing required styles and assets
 import "./index.scss";
 import LogoS from "../../../assets/images/D.png";
-import { useEffect, useRef } from "react";
+
 
 // Functional component for Logo
 const Logo = () => {
