@@ -1,6 +1,7 @@
 module.exports = {
   parserOptions: {
     sourceType: "module", // Add this line
+    ecmaVersion: 2021, // Add this line
   },
   parser: 'babel-eslint',
   extends: ['react-app'],
