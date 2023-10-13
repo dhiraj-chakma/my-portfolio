@@ -35,7 +35,6 @@
     "lint": "eslint src --ext .js --ext .jsx --ignore-path .gitignore",
     "lint:fix": "npm run lint -- --fix"
   },
-
   "eslintConfig": {
     "extends": [
       "react-app",
