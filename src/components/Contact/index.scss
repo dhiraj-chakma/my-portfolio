@@ -183,17 +183,17 @@
   .text-animate-hover{
     font-size: 10px;
   }
+  .about-page .text-zone, .contact-page .text-zone {
+    left: 0;
+  }
   .text-zone{
-    width: 80%;
     margin-left: 40px;
   }
   .about-page h1::before, .contact-page h1::before{
     top: 6%;
     left: -20%;
   }
-  .contact-form li{
-    width: 90%;
-  }
+
   .contact-form textarea {
     min-height: 100px;
   }
@@ -209,5 +209,11 @@
     span{
       font-size: 8px;
     }
+  }
+}
+
+@media (max-width: 369px) {
+  .text-zone{
+    margin-left: 70px;
   }
 }
