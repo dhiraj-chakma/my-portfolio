@@ -138,16 +138,51 @@
   }
 }
 
-// For very small mobile devices
-// @media (max-width: 369px) {
-//   .text-zone p {
-//     font-size: 2rem; // Further reduce the font size
-//   }
-//   .text-animate-hover {
-//     font-size: 2rem; // Adjust animated text size
-//   }
 
-//   .text-zone {
-//     padding-left: 45px; // Adjust padding for the text zone
-//   }
-// }
+//for very small screen
+@media (max-width: 500px) {
+  .cubespinner{
+    margin-left: 85px;
+    margin-top: 200px;
+  }
+  #about-txt p{
+    font-size: 8px;
+  }
+
+  .cubespinner {
+    transform-origin: 30px 30px 0;
+
+    div {
+      width: 70px;
+      height: 70px;
+      font-size: 30px;
+    }
+
+    // Adjust transformations for each face
+    .face1 {
+      transform: translateZ(30px);
+    }
+    .face2 {
+      transform: rotateY(90deg) translateZ(30px);
+    }
+    .face3 {
+      transform: rotateY(90deg) rotateX(90deg) translateZ(30px);
+    }
+    .face4 {
+      transform: rotateY(180deg) rotateZ(90deg) translateZ(30px);
+    }
+    .face5 {
+      transform: rotateY(-90deg) rotateZ(90deg) translateZ(30px);
+    }
+    .face6 {
+      transform: rotateY(-90deg) translateZ(30px);
+    }
+  }
+
+  #about-txt h1::before {
+    left: -40%;
+  }
+  #about-txt h1::after{
+    left: -50%;
+  }
+}
